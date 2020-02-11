@@ -1,3 +1,47 @@
+**Model Parameters**
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 16, 26, 26]             160
+       BatchNorm2d-2           [-1, 16, 26, 26]              32
+         Dropout2d-3           [-1, 16, 26, 26]               0
+            Conv2d-4           [-1, 32, 24, 24]           4,640
+       BatchNorm2d-5           [-1, 32, 24, 24]              64
+         Dropout2d-6           [-1, 32, 24, 24]               0
+            Conv2d-7           [-1, 10, 24, 24]             330
+         MaxPool2d-8           [-1, 10, 12, 12]               0
+            Conv2d-9           [-1, 16, 10, 10]           1,456
+      BatchNorm2d-10           [-1, 16, 10, 10]              32
+        Dropout2d-11           [-1, 16, 10, 10]               0
+           Conv2d-12             [-1, 16, 8, 8]           2,320
+      BatchNorm2d-13             [-1, 16, 8, 8]              32
+        Dropout2d-14             [-1, 16, 8, 8]               0
+           Conv2d-15             [-1, 16, 6, 6]           2,320
+      BatchNorm2d-16             [-1, 16, 6, 6]              32
+        Dropout2d-17             [-1, 16, 6, 6]               0
+           Conv2d-18             [-1, 16, 4, 4]           2,320
+      BatchNorm2d-19             [-1, 16, 4, 4]              32
+        Dropout2d-20             [-1, 16, 4, 4]               0
+           Conv2d-21             [-1, 10, 4, 4]             170
+           Conv2d-22             [-1, 10, 1, 1]           1,610
+================================================================
+Total params: 15,550
+Trainable params: 15,550
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.80
+Params size (MB): 0.06
+Estimated Total Size (MB): 0.87
+
+
+
+
+
+
+
+
 0%|          | 0/469 [00:00<?, ?it/s]/usr/local/lib/python3.6/dist-packages/ipykernel_launcher.py:59: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
 loss=0.09419889003038406 batch_id=468: 100%|██████████| 469/469 [00:14<00:00, 32.55it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
