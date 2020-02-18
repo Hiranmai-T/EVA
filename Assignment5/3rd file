@@ -10,3 +10,5 @@ Test set: Average loss: 0.0195, Accuracy: 9943/10000 (99.43%)
 
 Analysis: Maybe this is not the step which is required. I have tried the same with different optimizers like Adam but 
 the results are not satisfactory.
+
+Code Link:https://colab.research.google.com/drive/1_h_eDEuatSFbjg7OMOGAThrVIEIjq0Fv
