@@ -1,0 +1,8 @@
+Target: To reduce the number of parameters to less than 10k
+
+Result: I was able to do this, by removing conv7 block in previous step and reducing the computations slightly in 
+transition block 1 and the conv block following that. Now the model has 9812 parameters.
+
+Analysis: The model gave 99.42% accuracy in the 10th epoch. But that is the only time, the accuracy went over 99.4% 
+But this is to be expected because I have reduced the number of parameters from the previous model. 
+Now I have to look at different places from where I can compensate this loss of parameters
