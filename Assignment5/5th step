@@ -1,0 +1,6 @@
+Target: To still increase the accuracy by changing lr_scheduler if possible
+
+Result: After changing the step to 4 and lr to 0.03, the model was able to achieve 99.46% accuracy in
+the 12th epoch and the last few epochs are close to 99.4% accuracy.
+
+Analysis: Instead of reducing the step to 5 as before, I have reduced it to 4 here based on the logs. There is no overfitting in the model. But I think it can be pushed further
