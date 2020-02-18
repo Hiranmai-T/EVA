@@ -1,0 +1,6 @@
+Target : To understand what happens when the same model in colab 10 would work under 15 epochs
+
+Result: It gave 99.48% in the 19th epoch. And the 99.4% was consistent in the last few epochs.
+
+Analysis: The model is good given the number of parameters which is 13k. Now the task is to reduce the number of parameters. 
+The first block which I see with high number of parameters is conv7 block with 2k parameters.
