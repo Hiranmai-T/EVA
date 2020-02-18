@@ -1,0 +1,6 @@
+Target: To look for ways to increase the accuracy further by doing data augmentation.
+
+Result: I have used horizontal flip and the accuracy decreased.
+
+Analysis: It was silly to use horizontal flip, as there will be no digits written in the dataset by 
+flipping them, the only digit which can be flipped is 1. So this is not the data augmentation which is required.
