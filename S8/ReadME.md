@@ -258,7 +258,7 @@ Test set: Average loss: 0.1380, Accuracy: 8620/10000 (86.20%)
 
 **Validation Loss and Acc graph:**
 
-
+![Graph](https://github.com/Hiranmai-T/EVA/blob/master/S8/s8_graph.png)
 
 **Analysis:**
    In the previous model, I have kept batch size very small which led to more consumption of ram in google colab and the epochs took more time to complete. Now I have changed the batch size to 128 and the epochs ran without any difficulty. The resnet model as is without any regularization techniques was overfitting, it acheived 100% within a few epochs. Then I added random erasing and vertical flip, then the model trained without overfitting. 
