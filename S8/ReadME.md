@@ -1,13 +1,16 @@
 **Epoch Logs**
+
   0%|          | 0/391 [00:00<?, ?it/s]EPOCH: 0
 Loss=1.9136377573013306 Batch_id=390 Accuracy=24.34: 100%|██████████| 391/391 [00:52<00:00,  7.50it/s]
   0%|          | 0/391 [00:00<?, ?it/s]
 Test set: Average loss: 0.6666, Accuracy: 3334/10000 (33.34%)
 
+
 EPOCH: 1
 Loss=1.5040795803070068 Batch_id=390 Accuracy=39.97: 100%|██████████| 391/391 [00:52<00:00,  7.42it/s]
   0%|          | 0/391 [00:00<?, ?it/s]
 Test set: Average loss: 0.5576, Accuracy: 4424/10000 (44.24%)
+
 
 EPOCH: 2
 Loss=1.5453779697418213 Batch_id=390 Accuracy=49.31: 100%|██████████| 391/391 [00:52<00:00,  7.40it/s]
@@ -249,3 +252,13 @@ Loss=0.052967630326747894 Batch_id=390 Accuracy=97.52: 100%|██████�
 
 Test set: Average loss: 0.1380, Accuracy: 8620/10000 (86.20%)
 
+**Best Accuracy:** 86.37
+
+**Final Accuracy:** 86.20
+
+**Validation Loss and Acc graph:**
+
+
+
+**Analysis:**
+   In the previous model, I have kept batch size very small which led to more consumption of ram in google colab and the epochs took more time to complete. Now I have changed the batch size to 128 and the epochs ran without any difficulty. The resnet model as is without any regularization techniques was overfitting, it acheived 100% within a few epochs. Then I added random erasing and vertical flip, then the model trained without overfitting. 
